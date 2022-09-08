@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',path='/css/file.css')}}">
+    <title>Document</title>
+</head>
+<body background="{{url_for('static',path='/image/Background.jpg')}}">
+    <h1 class="title">Predict Leaf Disease Quick</h1>
+    <div class="section-divide">
+    <section>
+        <form method="post" enctype="multipart/form-data" onsubmit="showloading()">
+            <input type="file" name="image" class="upload">
+            <br>
+            <br>
+            <input class="submit" type="submit" value="Predict">
+        </form>
+    </section>
+    </div>
+</body>
+</html>
